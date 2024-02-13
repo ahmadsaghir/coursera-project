@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%230058ff%22></rect><path fill=%22%23fff%22 d=%22M72.15 21.33L72.15 21.33Q74.49 22.50 74.90 25.02Q75.30 27.54 73.59 29.61L73.59 29.61Q72.42 31.23 70.58 31.41Q68.73 31.59 66.84 30.69L66.84 30.69Q64.68 29.70 62.30 29.16Q59.91 28.62 57.30 28.62L57.30 28.62Q52.44 28.62 48.62 30.15Q44.79 31.68 42.09 34.52Q39.39 37.35 38.00 41.22Q36.60 45.09 36.60 49.77L36.60 49.77Q36.60 55.26 38.18 59.31Q39.75 63.36 42.54 66.06Q45.33 68.76 49.11 70.07Q52.89 71.37 57.30 71.37L57.30 71.37Q59.73 71.37 62.16 70.92Q64.59 70.47 66.84 69.30L66.84 69.30Q68.73 68.40 70.58 68.67Q72.42 68.94 73.68 70.56L73.68 70.56Q75.48 72.81 74.99 75.20Q74.49 77.58 72.24 78.66L72.24 78.66Q69.90 79.83 67.43 80.60Q64.95 81.36 62.43 81.77Q59.91 82.17 57.30 82.17L57.30 82.17Q50.82 82.17 45.02 80.10Q39.21 78.03 34.67 73.98Q30.12 69.93 27.51 63.86Q24.90 57.78 24.90 49.77L24.90 49.77Q24.90 42.84 27.29 36.99Q29.67 31.14 34.04 26.87Q38.40 22.59 44.34 20.21Q50.28 17.82 57.30 17.82L57.30 17.82Q61.26 17.82 65.04 18.72Q68.82 19.62 72.15 21.33Z%22></path></svg>" />
+        <meta charset="UTF-8">
+        <meta http-equiv=“Pragma” content=”no-cache”>
+        <meta http-equiv=“Expires” content=”-1″>
+        <meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+        <!-- CSS Stylesheets -->
+        <link rel="stylesheet" href="css/master.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+
+        <title>API Project</title>
+    </head>
+
+    <body>
+       <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+           <img src="images/fields-1589613_1280.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center">
+           <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl" aria-hidden="true">
+               <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+           </div>
+           <div class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu" aria-hidden="true">
+               <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+           </div>
+           <div class="mx-auto max-w-7xl px-6 lg:px-8">
+               <div class="text-center mb-8">
+                   <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">EurOrbit</h1>
+                   <h2 class="mt-6 text-2xl leading-8 text-white">European Weather Forecast</h2>
+               </div>
+               <div class="flex items-center justify-center">
+                   <div class="text-white mr-4">Powered by</div>
+                   <a href="https://www.7timer.info/doc.php?lang=en" target="_blank" rel="noopener noreferrer">
+                       <button class="px-4 py-2 bg-transparent text-white border border-white rounded hover:bg-white hover:text-black">7Timer!</button>
+                   </a>
+               </div>
+               <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none mb-10">
+                   <div class="flex justify-center">
+                       <div class="relative inline-block text-left">
+                           <select id="citySelect" class="block appearance-none w-full bg-white border border-gray-300 hover:border-gray-400 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 focus:ring-offset-1 focus:ring-offset-gray-100">
+                               <option disabled selected>Select a city</option>
+                           </select>
+                           <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                               <!-- Heroicon name: solid/chevron-down -->
+                               <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                   <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
+                               </svg>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+               <div id="loadingIndicator" class="hidden flex justify-center mt-5">
+                   <div class="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-gray-900"></div>
+               </div>
+               <div class="grid grid-cols-1 md:grid-cols-7 gap-3 mb-10">
+                   <!-- Grid item 1 -->
+
+                   <!-- Repeat the pattern for more items -->
+               </div>
+           </div>
+       </div>
+       <footer class="bg-gray-800 py-6">
+           <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+               <p class="text-center text-gray-300">© 2024 Ahmad Saghir. All rights reserved.</p>
+           </div>
+       </footer>
+       <!-- Our codes -->
+       <script src="js/main.js"></script>
+    </body>
+
+</html>
