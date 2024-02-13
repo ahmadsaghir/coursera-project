@@ -31,7 +31,7 @@ fetch('city_coordinates.csv')
 function createWeatherGridItem(date, iconSrc, weatherHeader, maxTemp, minTemp) {
     // Create grid item element
     const gridItem = document.createElement('div');
-    gridItem.classList.add('bg-white', 'hover:bg-opacity-75', 'rounded-lg', 'overflow-hidden', 'shadow-md', 'transition', 'duration-300', 'transform', 'hover:-translate-y-1', 'hover:shadow-lg');
+    gridItem.classList.add('bg-white', 'hover:bg-opacity-75', 'rounded-lg', 'overflow-hidden', 'shadow-md', 'transition', 'duration-300', 'transform', 'hover:-translate-y-1', 'hover:shadow-lg', 'sm:w-full', 'md:w-full', 'lg:w-full', 'xl:w-full');
 
     // Populate grid item with weather data
     gridItem.innerHTML = `
