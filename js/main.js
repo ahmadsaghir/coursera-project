@@ -61,7 +61,7 @@ function populateWeatherGrid(latitude, longitude) {
     // Clear existing grid items
     grid.innerHTML = '';
     // Make a request to the 7Timer API
-    fetch(`http://www.7timer.info/bin/api.pl?lon=${longitude}&lat=${latitude}&product=civillight&output=json`)
+    fetch(`https://www.7timer.info/bin/api.pl?lon=${longitude}&lat=${latitude}&product=civillight&output=json`)
         .then(response => response.json())
         .then(data => {
             const dataseries = data.dataseries;
